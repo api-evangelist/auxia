@@ -13,9 +13,12 @@ hosts:
 - host: www.nasdaqprivatemarket.com
   found_by:
   - pointer
+  - vendor-detect
   types:
   - Website
-  serves: []
+  serves:
+  - cdn
+  vendor: fastly
   registrable_domain: nasdaqprivatemarket.com
   role: website
   relation: platform

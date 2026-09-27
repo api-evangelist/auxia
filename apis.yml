@@ -1,23 +1,51 @@
 aid: auxia
+
 name: Auxia
-description: 'Auxia is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Auxia is an agentic marketing platform that enables enterprises to orchestrate personalized, AI‑driven customer journeys across web, mobile, and lifecycle channels. It integrates first‑party data, automates growth experiments, and continuously optimizes experiences using proprietary machine learning, helping marketers increase conversion, retention, and revenue.'
+
 url: https://raw.githubusercontent.com/api-evangelist/auxia/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- Marketing
+- AI
+- Agentic
+- Customer-Journey
+- Enterprise
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/auxia-hosts.yml
+- type: Vendors
+  url: vendors/auxia-vendors.yml
+- type: DomainSecurity
+  url: security/auxia-domain-security.yml
 - type: Website
   url: https://www.nasdaqprivatemarket.com/
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

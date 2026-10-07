@@ -39,6 +39,10 @@ maintainers:
   email: info@apis.io
 
 common:
+- type: Pricing
+  url: https://www.nasdaqprivatemarket.com/data-intelligence/
+- type: Plans
+  url: plans/auxia-plans-pricing.yml
 - type: Hosts
   url: hosts/auxia-hosts.yml
 - type: Vendors
